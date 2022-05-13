@@ -8,10 +8,10 @@ import org.springframework.context.annotation.PropertySource;
 @PropertySource("classpath:application.properties")
 public class PropertiesForFileService {              // класс для введения свойств приложения
     @Value("${filepath}")                            // аннотация для конфигурации свойства хранения файла
-    private String path;                             // переменная доступная только для данного класса
+    private String path;                             // переменная path доступная только для данного класса
 
 
-    public String getPath() {                        // метод для получения пути хранения файла
+    public String getPath() {                        // метод для получения пути хранения  файла
         return path;                                 // метод возвращает переменную path (return-оператор перехода)
     }
 }
